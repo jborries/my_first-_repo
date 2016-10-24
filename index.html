@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Modernize</title>
+    <meta name="jQuery Assignment" content="jQuery Assignment">
+    <link rel="stylesheet" type="text/css" href="myCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#button1").click(function(){
+        $("h5").addClass("buttonclass");
+      })/*ADD CLASS*/
+      $("#button2").click(function(){
+        $("#h3a").slideToggle();
+      });/*SLIDE TOGGLE UP*/
+      $("#button3").click(function(){
+        $("#p3").append("<b>APPENDED TEXT<b>");
+      })/*APPEND*/
+      $("#button4a").click(function(){
+        $("#p4").slideUp();
+      })/*SLIDE UP*/
+      $("#button4b").click(function(){
+        $("#p4").slideDown();
+      })/*SLIDE DOWN*/
+      $("#button5a").click(function(){
+        $("#p5").fadeOut();
+      })/*FADE OUT*/
+      $("#button5b").click(function(){
+        $("#p5").fadeIn();
+      })/*FADE OUT*/
+      $("#button6").click(function(){
+        $("#p6").toggle();
+      })/*TOGGLE Paragraph ON and OFF*/
+      $("#button7a").click(function(){
+        $("#p7").hide();
+      })/*HIDE TEXT*/
+      $("#button7b").click(function(){
+        $("#p7").show();
+      })/*SHOW TEXT*/
+        $("#button").click(function(){
+          var mytext = $("this").text();
+          alert(mytext);
+        });/*CLICK & ALERT*/
+          $("input").focus(function(){
+          $("span").css("display", "inline").fadeOut(2000);
+        })
+
+        $("#button3")
+      });
+        </script>
+  </head>
+    <body>
+      <!--FIRST BLOCK ADD CLASS-->
+      <div class="block">
+        <div>
+          <button id="button1">Add Class</button>
+          <div class="text_area">
+            <h5>Add Class</h5><p>Click the button to add "blue" to paragraph.</p>
+          </div>
+      </div>
+    </div>
+    <!--SECOND BLOCK SLIDE TOGGLE LEFT-->
+    <div class="block">
+      <div>
+          <button id="button2">Click to Slide Toggle Up</button>
+          <div class="text_area">
+            <h3 id="h3a">Slide Toggle</h3><p id="p2">Click the button to slide toggle a UP/Down over the h3 "Slide Toggle"tag</p>
+          </div>
+      </div>
+    </div>
+    <!--THIRD BLOCK APPEND-->
+    <div class="block">
+      <div>
+        <button id="button3">Append</button>
+        <div class="text_area">
+          <h4>Append!</h4><p id="p3">Click the button to append a new paragraph!</p>
+        </div>
+      </div>
+    </div>
+    <!--FOURTH BLOCK SLIDE UP-->
+    <div class="block">
+      <div>
+        <button id="button4a">Slide UP</button><button id="button4b">Slide DOWN</button>
+        <p id="p4">Click the buttons to slide the text UP and DOWN</p>
+      </div>
+    </div>
+    <!--FIFTH BLOCK FADE OUT-->
+    <div class="block">
+      <div>
+        <button id="button5a">FADE OUT</button><button id="button5b">FADE IN</button><p id="p5">Click the buttons to fade in & out of the text</p>
+      </div>
+    </div>
+    <!--SIXTH BLOCK -->
+    <div class="block">
+      <div>
+        <button id="button6">TOGGLE</button>
+        <p id="p6">Click the toggle button to make this text disapper and reappear</p>
+      </div>
+    </div>
+    <!--SEVENTH BLOCK -->
+    <div class="block">
+      <div>
+        <button id="button7a">Hide</button><button id="button7b">Show</button>
+        <p id="p7">Click HIDE and SHOW to make this text go bye bye and Herro</p>
+      </div>
+    </div>
+    <!-- EIGHTH BLOCK -->
+    <div class="block">
+      <div>
+        <input></input>
+      </div>
+    </div>
+    </body>
+  <html>
